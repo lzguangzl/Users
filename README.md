@@ -8,3 +8,7 @@ User object contains the followings:
 5. age
 6. birthDate
 7. gender
+
+## Heroku Deployment
+1. system.properties is required for heroku deployment
+2. heroku default JDK is 1.8
