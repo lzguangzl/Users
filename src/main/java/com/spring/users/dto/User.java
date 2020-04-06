@@ -1,14 +1,28 @@
 package com.spring.users.dto;
 
+import javax.validation.constraints.*;
 import java.util.Date;
 
 public class User {
     private Integer id;
+
+    @NotNull
+    @Size(min = 3, message = "Name should be at least 3 characters")
     private String name;
+
+    @Size(min = 6, message = "Password should be at least 6 characters")
     private String password;
+
+    @Email(message = "Email should be valid")
     private String email;
+
+    @Positive(message = "Age should not be less than 0")
     private Integer age;
+
+    @Past(message = "Date of birth should be in the past")
     private Date birthDate;
+
+    @NotNull
     private String gender;
 
     public User() {
