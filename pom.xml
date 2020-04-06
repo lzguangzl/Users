@@ -11,6 +11,7 @@
 	<groupId>com.spring</groupId>
 	<artifactId>users</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>users</name>
 	<description>Users Application using Spring Boot</description>
 
