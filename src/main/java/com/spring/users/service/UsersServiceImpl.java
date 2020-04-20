@@ -1,6 +1,8 @@
 package com.spring.users.service;
 
 import com.spring.users.dto.User;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Service;
 
 import java.text.SimpleDateFormat;
@@ -10,6 +12,8 @@ import java.util.List;
 
 @Service
 public class UsersServiceImpl implements UsersService {
+
+    private final static Logger logger = LogManager.getLogger(UsersServiceImpl.class);
 
     private static SimpleDateFormat sdf = new SimpleDateFormat("dd-mm-yyyy");
     private static List<User> users = new ArrayList<User>();
@@ -23,6 +27,7 @@ public class UsersServiceImpl implements UsersService {
 
     @Override
     public List<User> getUsers() {
+        logger.info("GetUsers: " + users);
         return users;
     }
 
@@ -67,8 +72,10 @@ public class UsersServiceImpl implements UsersService {
     public String deleteUser(Integer id) {
         boolean isDeleted = users.removeIf(usr -> usr.getId() == id);
         if (isDeleted) {
+            logger.info("User " + id + " is deleted");
             return "User deleted";
         } else {
+            logger.info("User " + id + " NOT deleted");
             return "Delete failed";
         }
     }

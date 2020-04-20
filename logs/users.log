@@ -1,0 +1,15 @@
+[INFO ] 2020-04-20 18:14:50.350 [restartedMain] UsersApplication - Started UsersApplication in 1.045 seconds (JVM running for 1.702)
+[INFO ] 2020-04-20 18:14:55.832 [restartedMain] UsersApplication - Starting UsersApplication on DESKTOP-UHIET7F with PID 7228 (D:\Workspace\Spring Workspace\users\target\classes started by lohzg in D:\Workspace\Spring Workspace\users)
+[INFO ] 2020-04-20 18:14:55.839 [restartedMain] UsersApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-04-20 18:14:56.680 [restartedMain] UsersApplication - Started UsersApplication in 1.048 seconds (JVM running for 1.703)
+[INFO ] 2020-04-20 18:15:32.201 [restartedMain] UsersApplication - Starting UsersApplication on DESKTOP-UHIET7F with PID 7228 (D:\Workspace\Spring Workspace\users\target\classes started by lohzg in D:\Workspace\Spring Workspace\users)
+[INFO ] 2020-04-20 18:15:32.202 [restartedMain] UsersApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-04-20 18:15:32.401 [restartedMain] UsersApplication - Started UsersApplication in 0.224 seconds (JVM running for 37.425)
+[INFO ] 2020-04-20 18:23:38.978 [restartedMain] UsersApplication - Starting UsersApplication on DESKTOP-UHIET7F with PID 7228 (D:\Workspace\Spring Workspace\users\target\classes started by lohzg in D:\Workspace\Spring Workspace\users)
+[DEBUG] 2020-04-20 18:23:38.978 [restartedMain] UsersApplication - Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+[INFO ] 2020-04-20 18:23:38.979 [restartedMain] UsersApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-04-20 18:23:39.204 [restartedMain] UsersApplication - Started UsersApplication in 0.252 seconds (JVM running for 524.227)
+[INFO ] 2020-04-20 18:25:18.686 [restartedMain] UsersApplication - Starting UsersApplication on DESKTOP-UHIET7F with PID 15572 (D:\Workspace\Spring Workspace\users\target\classes started by lohzg in D:\Workspace\Spring Workspace\users)
+[DEBUG] 2020-04-20 18:25:18.692 [restartedMain] UsersApplication - Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+[INFO ] 2020-04-20 18:25:18.693 [restartedMain] UsersApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-04-20 18:25:19.538 [restartedMain] UsersApplication - Started UsersApplication in 1.07 seconds (JVM running for 1.712)

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="warn">
+    <Properties>
+        <Property name="log_dir">logs</Property>
+    </Properties>
+
+    <Appenders>
+        <Console name="LogToConsole" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n" />
+        </Console>
+
+        <RollingFile name="LogToRollingFile" fileName="${log_dir}/users.log"
+                     filePattern="${log_dir}/$${date:yyyy-MM-dd}/users-%d{dd-MMM}-%i.log.gz">
+            <PatternLayout>
+                <pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n</pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1"/>
+                <SizeBasedTriggeringPolicy size="10Mb"/>
+            </Policies>
+            <DefaultRolloverStrategy max="5"/>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <Logger name="com.spring.users" level="debug" additivity="false">
+            <appender-ref ref="LogToConsole" />
+            <appender-ref ref="LogToRollingFile"/>
+        </Logger>
+
+        <Root level="info" additivity="false">
+            <appender-ref ref="LogToConsole" />
+        </Root>
+    </Loggers>
+</Configuration>
